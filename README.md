@@ -1,2 +1,2 @@
 # BZApp
- BlitZense Android App
+ BlitZense Android App, made to learn mobile development in Android Studio
