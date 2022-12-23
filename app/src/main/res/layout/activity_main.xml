@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="?attr/colorButtonNormal"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/lblTemp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="@string/lbl_temp"
+                                            android:textColor="?android:attr/colorForeground"
+                                            android:textSize="24sp"
+                                            app:autoSizeMinTextSize="12dp"
+                                            app:autoSizeTextType="uniform" />
+
+                                        <TextView
+                                            android:id="@+id/valueTemp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:lines="1"
+                                            android:textAlignment="center"
+                                            android:textColor="?android:attr/colorForeground"
+                                            android:textSize="48sp"
+                                            app:autoSizeMaxTextSize="48sp"
+                                            app:autoSizeMinTextSize="12sp"
+                                            app:autoSizeStepGranularity="2sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/lblHum"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="@string/lbl_hum"
+                                            android:textAlignment="center"
+                                            android:textColor="?android:attr/colorForeground"
+                                            android:textSize="24sp"
+                                            app:autoSizeMinTextSize="24dp"
+                                            app:autoSizeTextType="uniform" />
+
+                                        <TextView
+                                            android:id="@+id/valueHum"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:lines="1"
+                                            android:textAlignment="center"
+                                            android:textColor="?android:attr/colorForeground"
+                                            android:textSize="48sp"
+                                            android:visibility="visible"
+                                            app:autoSizeMaxTextSize="48sp"
+                                            app:autoSizeMinTextSize="12sp"
+                                            app:autoSizeStepGranularity="2sp"
+                                            app:autoSizeTextType="uniform" />
+                                </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/lblGases"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/lbl_gas"
+                                    android:textColor="?android:attr/colorForeground"
+                                    android:textSize="24sp"
+                                    app:autoSizeMinTextSize="24dp" />
+
+                                <TextView
+                                    android:id="@+id/valueGas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:gravity="center"
+                                    android:lines="1"
+                                    android:textColor="?android:attr/colorForeground"
+                                    android:textSize="48sp"
+                                    android:visibility="visible"
+                                    app:autoSizeMaxTextSize="48sp"
+                                    app:autoSizeMinTextSize="12sp"
+                                    app:autoSizeStepGranularity="2sp"
+                                    app:autoSizeTextType="uniform" />
+                        </LinearLayout>
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
